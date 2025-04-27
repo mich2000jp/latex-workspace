@@ -1,0 +1,54 @@
+{
+  // LaTeX ---------------------------------------------------------------------------
+
+  // ファイル保存時の実行レシピを設定 (lualatex/uplatex/pdflatex/xelatex)
+  // .latexmkrcのpdf_mode の変更も必要
+  "latex-workshop.latex.recipe.default": "lualatex",
+
+  // レシピの設定
+  "latex-workshop.latex.recipes": [
+    { "name": "lualatex", "tools": ["lualatex"] },
+    { "name": "uplatex", "tools": ["uplatex"] },
+    { "name": "pdflatex", "tools": ["pdflatex"] },
+    { "name": "xelatex", "tools": ["xelatex"] }
+  ],
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "lualatex",
+      "command": "latexmk",
+      "args": ["-lualatex", "-r", "../.latexmkrc", "-time", "%DOC%"]
+    },
+    {
+      "name": "uplatex",
+      "command": "latexmk",
+      "args": ["-r", "../.latexmkrc", "-time", "%DOC%"]
+    },
+    {
+      "name": "pdflatex",
+      "command": "latexmk",
+      "args": ["-pdflatex", "-r", "../.latexmkrc", "-time", "%DOC%"]
+    },
+    {
+      "name": "xelatex",
+      "command": "latexmk",
+      "args": ["-xelatex", "-r", "../.latexmkrc", "-time", "%DOC%"]
+    }
+  ],
+
+  //余計なファイル・フォルダをVS Code上で非表示にする
+  "files.exclude": {
+    //"**/.intermediates": true,
+    "**/.intermediates/*.aux": true,
+    "**/.intermediates/*.fdb_latexmk": true,
+    "**/.intermediates/*.fls": true,
+    "**/.intermediates/*.idx": true,
+    "**/.intermediates/*.ilg": true,
+    //".latexmkrc": true,
+    //".vscode": true,
+    ".gitignore": true,
+    "LICENSE": true
+  }
+
+  // -----------------------------------------------------------------------------------
+}
