@@ -1,0 +1,60 @@
+
+\documentclass{beamer}
+
+\usepackage{luatexja}
+\usepackage[ipaex]{luatexja-preset}
+\usepackage{mathtools,amsmath, amssymb, amsfonts, amsthm,bm,float,graphicx,xcolor}
+
+\usetheme{Copenhagen}
+\usefonttheme{professionalfonts}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+%%% amsthm関係 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{thm}[name] \end{thm} のように使えます
+
+\setbeamertemplate{theorems}[numbered]
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{ass}[thm]{Assumption}
+\newtheorem{dfn}[thm]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+
+%%% タイトル %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Slide Title}
+\subtitle{Slide Subtitle}
+\author{Author}
+\date{\today}
+
+
+%%% 本文 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\frame{\titlepage}
+\frame{\tableofcontents}
+
+\section{Section Name}
+\subsection{Subsection Name}
+
+\begin{frame}{Page Title}
+    \begin{block}{block name}
+        Sample block.
+    \end{block}
+    \begin{exampleblock}{example block name}
+        Sample example block.
+    \end{exampleblock}
+    \begin{alertblock}{alert block name}
+        Sample alert block.
+    \end{alertblock}
+\end{frame}
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
