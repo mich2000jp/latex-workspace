@@ -44,8 +44,8 @@
     "**/.intermediates/*.fls": true,
     "**/.intermediates/*.idx": true,
     "**/.intermediates/*.ilg": true,
-    //".latexmkrc": true,
-    //".vscode": true,
+    ".latexmkrc": true,
+    ".vscode": true,
     ".gitignore": true,
     "LICENSE": true
   }
