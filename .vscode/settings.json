@@ -36,8 +36,9 @@
     }
   ],
 
-  //余計なファイル・フォルダをVS Code上で非表示にする
+  //余計なファイル・フォルダをVS Code上で非表示にする。「//」をつけてコメントアウトすると表示される。
   "files.exclude": {
+    //".latexmkrc": true,
     //"**/.intermediates": true,
     "**/.intermediates/*.aux": true,
     "**/.intermediates/*.fdb_latexmk": true,
@@ -49,7 +50,6 @@
     "**/.intermediates/*.out": true,
     "**/.intermediates/*.snm": true,
     "**/.intermediates/*.toc": true,
-    ".latexmkrc": true,
     ".vscode": true,
     ".gitignore": true,
     "LICENSE": true
