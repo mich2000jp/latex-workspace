@@ -1,8 +1,8 @@
 # latex-workspace
 
-## 導入方法（Mac ユーザ向け）
-
 github ページ　https://github.com/mich2000jp/latex-workspace
+
+## 導入方法（Mac ユーザ向け）
 
 1. 「Visual Studio Code」を[ここ](https://code.visualstudio.com/download)からダウンロード・インストール
 2. VSCode 用の拡張機能「LaTex Workshop」を入れます。
@@ -16,9 +16,9 @@ github ページ　https://github.com/mich2000jp/latex-workspace
 まず必要なものをインストールしているか確認してください。
 
 1. VSCode の拡張機能「Latex Workshop」を導入していますか？
-2. 「MacTex」または「TexLive」をダウンロード、インストールしていますか？
+2. 「MacTeX」または「TexLive」をダウンロード、インストールしていますか？
 
-過去に latex の導入を試みた方は、「.latexmkrc」ファイルを作成しているかもしれません。その場合、過去に作成した「.latexmkrc」を消すか、このフォルダにある「.latexmkrc」で上書きしてください（ホームディレクトリに「.latexmkrc」を作成している場合が多いです。Finder アプリを開き、「Shift+Command+H」でホームディレクトリに移動し、「Shift+Command+ . 」で隠しファイルを表示して、「.latexmkrc」があるか確認してください）。
+過去に LaTeX の導入を試みた方は、「.latexmkrc」ファイルを作成しているかもしれません。その場合、過去に作成した「.latexmkrc」を消すか、このフォルダにある「.latexmkrc」で上書きしてください（ホームディレクトリに「.latexmkrc」を作成している場合が多いです。Finder アプリを開き、「Shift+Command+H」でホームディレクトリに移動し、「Shift+Command+ . 」で隠しファイルを表示して、「.latexmkrc」があるか確認してください）。
 
 それでも解決しない場合、エラーメッセージまたは「.intermediates/main.log」を確認してください。
 
@@ -27,6 +27,8 @@ github ページ　https://github.com/mich2000jp/latex-workspace
 ルートフォルダの下に好きな名前のフォルダを作り、その中に xxxx.tex を作っても同じように使えます。授業やゼミごとにフォルダを変えて使ってみてください。ただしフォルダを入れ子式にすることはできません。
 
 （良い例）
+
+```text
 latex-workspace
 ┣ ミクロ経済学 I
 ┃ 　 ┣ homework1.tex
@@ -34,8 +36,11 @@ latex-workspace
 ┣ マクロ経済学 I
 ┃ 　 ┗ homework1.tex
 ┗ README.md
+```
 
-悪い例
+（悪い例）
+
+```text
 latex-workspace
 ┣ 経済学
 ┃ 　 ┣ ミクロ経済学 I
@@ -44,6 +49,7 @@ latex-workspace
 ┃ 　 ┣ マクロ経済学 I
 ┃ 　 ┗ homework1.tex
 ┗ README.md
+```
 
 使っていてエラーになる場合は「.intermediates/xxxx.log」を確認。大抵は「パッケージがない」エラーだと思うので、log にある通りターミナルに打ってインストールしてください。
 
